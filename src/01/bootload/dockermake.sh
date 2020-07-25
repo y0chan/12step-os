@@ -1,0 +1,1 @@
+docker run --rm -v $PWD:/tmp -w /tmp 12step-compiler make $1
