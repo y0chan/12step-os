@@ -14,19 +14,19 @@
     ```
 1. ソースコードのコンパイル、イメージの作成
 - Dockerコンテナ上で`make`, `make clean` ,`make image`を実行
-    - 各bootloadディレクトリ、osディレクトリで以下のコマンドを実行
-    - `make`
+    - 各bootloadディレクトリ、osディレクトリで`dockermake.sh`を実行する
+    - `make`(引数なし)
 
     ```
-    docker run --rm -v $PWD:/tmp -w /tmp 12step-compiler make
+    ./dockermake.sh
     ```
     - `make clean`
     ```
-    docker run --rm -v $PWD:/tmp -w /tmp 12step-compiler make clean
+    ./dockermake.sh clean
     ```
     - `make image`
     ```
-    docker run --rm -v $PWD:/tmp -w /tmp 12step-compiler make image
+    ./dockermake.sh image
     ```
 ## PC環境
 - MacBook Air (11-inch, Early 2015)
