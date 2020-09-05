@@ -1,2 +1,2 @@
-src/01/bootload/*.o
-src/01/bootload/kzload*
+src/*/bootload/*.o
+src/*/bootload/kzload*
